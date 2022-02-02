@@ -1,0 +1,14 @@
+name: Leap Assessment Demo
+
+on: [push]
+
+jobs:
+  run-shell-Command:
+      runs-on: ubuntu-latest
+      steps:
+        - name: echo a string
+          run: echo "Hello this is Leap Assessment"
+        - name: multiline script 
+          run: |
+            node -v
+            npm -v  
